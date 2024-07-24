@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Formulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .section-title {
+            margin-top: 20px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Excel Formulas</h1>
+    
+    <h2 class="section-title">Mathematical Formulas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SUM</td>
+                <td>Sum</td>
+                <td>Adds all the numbers in a range of cells.</td>
+            </tr>
+            <tr>
+                <td>AVERAGE</td>
+                <td>Average</td>
+                <td>Returns the average (arithmetic mean) of its arguments.</td>
+            </tr>
+            <tr>
+                <td>MIN</td>
+                <td>Minimum</td>
+                <td>Returns the smallest number in a set of values.</td>
+            </tr>
+            <tr>
+                <td>MAX</td>
+                <td>Maximum</td>
+                <td>Returns the largest number in a set of values.</td>
+            </tr>
+            <tr>
+                <td>PRODUCT</td>
+                <td>Product</td>
+                <td>Multiplies all the numbers given as arguments.</td>
+            </tr>
+            <tr>
+                <td>ROUND</td>
+                <td>Round</td>
+                <td>Rounds a number to a specified number of digits.</td>
+            </tr>
+            <tr>
+                <td>ROUNDUP</td>
+                <td>Round Up</td>
+                <td>Rounds a number up, away from zero.</td>
+            </tr>
+            <tr>
+                <td>ROUNDDOWN</td>
+                <td>Round Down</td>
+                <td>Rounds a number down, toward zero.</td>
+            </tr>
+            <tr>
+                <td>CEILING</td>
+                <td>Ceiling</td>
+                <td>Rounds a number up to the nearest multiple of significance.</td>
+            </tr>
+            <tr>
+                <td>FLOOR</td>
+                <td>Floor</td>
+                <td>Rounds a number down to the nearest multiple of significance.</td>
+            </tr>
+            <tr>
+                <td>MOD</td>
+                <td>Modulus</td>
+                <td>Returns the remainder after a number is divided by a divisor.</td>
+            </tr>
+            <tr>
+                <td>ABS</td>
+                <td>Absolute</td>
+                <td>Returns the absolute value of a number.</td>
+            </tr>
+            <tr>
+                <td>POWER</td>
+                <td>Power</td>
+                <td>Returns the result of a number raised to a power.</td>
+            </tr>
+            <tr>
+                <td>SQRT</td>
+                <td>Square Root</td>
+                <td>Returns the square root of a number.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Text Formulas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CONCATENATE</td>
+                <td>Concatenate</td>
+                <td>Joins two or more text strings into one string.</td>
+            </tr>
+            <tr>
+                <td>LEFT</td>
+                <td>Left</td>
+                <td>Returns the first character(s) in a text string based on the number specified.</td>
+            </tr>
+            <tr>
+                <td>RIGHT</td>
+                <td>Right</td>
+                <td>Returns the last character(s) in a text string based on the number specified.</td>
+            </tr>
+            <tr>
+                <td>MID</td>
+                <td>Mid</td>
+                <td>Returns a specific number of characters from a text string starting at the position specified.</td>
+            </tr>
+            <tr>
+                <td>LEN</td>
+                <td>Length</td>
+                <td>Returns the number of characters in a text string.</td>
+            </tr>
+            <tr>
+                <td>UPPER</td>
+                <td>Upper Case</td>
+                <td>Converts a text string to uppercase letters.</td>
+            </tr>
+            <tr>
+                <td>LOWER</td>
+                <td>Lower Case</td>
+                <td>Converts a text string to lowercase letters.</td>
+            </tr>
+            <tr>
+                <td>TRIM</td>
+                <td>Trim</td>
+                <td>Removes all spaces from a text string except for single spaces between words.</td>
+            </tr>
+            <tr>
+                <td>TEXT</td>
+                <td>Text</td>
+                <td>Formats a number and converts it to text.</td>
+            </tr>
+            <tr>
+                <td>SEARCH</td>
+                <td>Search</td>
+                <td>Finds one text string within another text string and returns the position of the starting character of the text.</td>
+            </tr>
+            <tr>
+                <td>FIND</td>
+                <td>Find</td>
+                <td>Returns the starting position of one text string within another text string, case-sensitive.</td>
+            </tr>
+            <tr>
+                <td>REPLACE</td>
+                <td>Replace</td>
+                <td>Replaces part of a text string with a different text string.</td>
+            </tr>
+            <tr>
+                <td>SUBSTITUTE</td>
+                <td>Substitute</td>
+                <td>Substitutes new text for old text in a text string.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Logical Formulas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>IF</td>
+                <td>If</td>
+                <td>Returns one value if a condition is true and another value if it's false.</td>
+            </tr>
+            <tr>
+                <td>AND</td>
+                <td>And</td>
+                <td>Returns TRUE if all its arguments are TRUE.</td>
+            </tr>
+            <tr>
+                <td>OR</td>
+                <td>Or</td>
+                <td>Returns TRUE if any argument is TRUE.</td>
+            </tr>
+            <tr>
+                <td>NOT</td>
+                <td>Not</td>
+                <td>Reverses the logic of its argument.</td>
+            </tr>
+            <tr>
+                <td>IFERROR</td>
+                <td>If Error</td>
+                <td>Returns a value if an error is found; otherwise, returns the result of the formula.</td>
+            </tr>
+            <tr>
+                <td>IFNA</td>
+                <td>If NA</td>
+                <td>Returns a value you specify if a formula returns the #N/A error value; otherwise, returns the result of the formula.</td>
+            </tr>
+            <tr>
+                <td>SWITCH</td>
+                <td>Switch</td>
+                <td>Evaluates an expression against a list of values and returns the result corresponding to the first matching value.</td>
+            </tr>
+            <tr>
+                <td>CHOOSE</td>
+                <td>Choose</td>
+                <td>Returns a value from a list of values based on an index number.</td>
+            </tr>
+            <tr>
+                <td>ISBLANK</td>
+                <td>Is Blank</td>
+                <td>Returns TRUE if the specified cell is blank.</td>
+            </tr>
+            <tr>
+                <td>ISERROR</td>
+                <td>Is Error</td>
+                <td>Returns TRUE if the value refers to any error value.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Lookup and Reference Formulas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>VLOOKUP</td>
+                <td>Vertical Lookup</td>
+                <td>Looks for a value in the first column of a table and returns a value in the same row from a column you specify.</td>
+            </tr>
+            <tr>
+                <td>HLOOKUP</td>
+                <td>Horizontal Lookup</td>
+                <td>Looks for a value in the top row of a table and returns a value in the same column from a row you specify.</td>
+            </tr>
+            <tr>
+                <td>INDEX</td>
+                <td>Index</td>
+                <td>Returns the value of an element in a table or array selected by the row and column number indexes.</td>
+            </tr>
+            <tr>
+                <td>MATCH</td>
+                <td>Match</td>
+                <td>Returns the relative position of an item in an array that matches a specified value.</td>
+            </tr>
+            <tr>
+                <td>CHOOSE</td>
+                <td>Choose</td>
+                <td>Returns a value from a list of values based on an index number.</td>
+            </tr>
+            <tr>
+                <td>OFFSET</td>
+                <td>Offset</td>
+                <td>Returns a reference to a range that is a specified number of rows and columns from a cell or range of cells.</td>
+            </tr>
+            <tr>
+                <td>TRANSPOSE</td>
+                <td>Transpose</td>
+                <td>Returns a horizontal range of cells as a vertical range and vice versa.</td>
+            </tr>
+            <tr>
+                <td>LOOKUP</td>
+                <td>Lookup</td>
+                <td>Looks in a one-row or one-column range (array) for a value and returns a value from the same position in a second one-row or one-column range.</td>
+            </tr>
+            <tr>
+                <td>COLUMN</td>
+                <td>Column</td>
+                <td>Returns the column number of a reference.</td>
+            </tr>
+            <tr>
+                <td>ROW</td>
+                <td>Row</td>
+                <td>Returns the row number of a reference.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Date and Time Formulas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Short Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TODAY</td>
+                <td>Today</td>
+                <td>Returns the current date.</td>
+            </tr>
+            <tr>
+                <td>NOW</td>
+                <td>Now</td>
+                <td>Returns the current date and time.</td>
+            </tr>
+            <tr>
+                <td>DATE</td>
+                <td>Date</td>
+                <td>Returns the number that represents the date in Microsoft Excel date-time code.</td>
+            </tr>
+            <tr>
+                <td>DAY</td>
+                <td>Day</td>
+                <td>Converts a serial number to a day of the month.</td>
+            </tr>
+            <tr>
+                <td>MONTH</td>
+                <td>Month</td>
+                <td>Converts a serial number to a month.</td>
+            </tr>
+            <tr>
+                <td>YEAR</td>
+                <td>Year</td>
+                <td>Converts a serial number to a year.</td>
+            </tr>
+            <tr>
+                <td>HOUR</td>
+                <td>Hour</td>
+                <td>Converts a serial number to an hour.</td>
+            </tr>
+            <tr>
+                <td>MINUTE</td>
+                <td>Minute</td>
+                <td>Converts a serial number to a minute.</td>
+            </tr>
+            <tr>
+                <td>SECOND</td>
+                <td>Second</td>
+                <td>Converts a serial number to a second.</td>
+            </tr>
+            <tr>
+                <td>WEEKDAY</td>
+                <td>Weekday</td>
+                <td>Converts a serial number to a day of the week.</td>
+            </tr>
+            <tr>
+                <td>EDATE</td>
+                <td>Edate</td>
+                <td>Returns the serial number of the date that is the indicated number of months before or after the start date.</td>
+            </tr>
+            <tr>
+                <td>NETWORKDAYS</td>
+                <td>Network Days</td>
+                <td>Returns the number of whole workdays between two dates.</td>
+            </tr>
+            <tr>
+                <td>EOMONTH</td>
+                <td>End of Month</td>
+                <td>Returns the serial number for the last day of the month that is the indicated number of months before or after the start date.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
