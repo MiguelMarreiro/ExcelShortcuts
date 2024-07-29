@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja Templates Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Jinja Templates Overview</h1>
+
+<h2>What is Jinja?</h2>
+<p>Jinja is a modern and designer-friendly templating language for Python, modeled after Django's templates.</p>
+
+<h2>Jinja Documentation</h2>
+<p>The official Jinja documentation can be found at: <a href="https://jinja.palletsprojects.com/" target="_blank">Jinja Documentation</a>.</p>
+
+<h2>Topics Covered</h2>
+<ul>
+    <li><a href="#syntax">Jinja Syntax</a></li>
+    <li><a href="#control-structures">Control Structures</a></li>
+    <li><a href="#filters">Filters</a></li>
+    <li><a href="#macros">Macros</a></li>
+</ul>
+
+<h2 id="syntax">Jinja Syntax</h2>
+<p>In Jinja, you can use curly braces to output data or control structures.</p>
+<pre>
+{{ variable }}
+</pre>
+
+<h2 id="control-structures">Control Structures</h2>
+<p>Control structures like loops and conditionals can be used in Jinja templates.</p>
+<pre>
+{% if condition %}
+    This will be displayed if the condition is true.
+{% endif %}
+
+{% for item in list %}
+    {{ item }}
+{% endfor %}
+</pre>
+
+<h2 id="filters">Filters</h2>
+<p>Filters modify values before they are displayed.</p>
+<pre>
+{{ variable|filter_name }}
+</pre>
+
+<h2 id="macros">Macros</h2>
+<p>Macros are like functions in Jinja and allow you to define reusable snippets of code.</p>
+<pre>
+{% macro render_item(item) %}
+    <div>{{ item.name }}</div>
+{% endmacro %}
+</pre>
+
+<h2>Useful Shortcuts</h2>
+<ul>
+    <li>Output variable: <code>{{ variable }}</code></li>
+    <li>Control with conditionals: <code>{% if ... %} ... {% endif %}</code></li>
+    <li>Looping: <code>{% for ... in ... %} ... {% endfor %}</code></li>
+    <li>Include another template: <code>{% include 'template.html' %}</code></li>
+</ul>
+
+</body>
+</html>

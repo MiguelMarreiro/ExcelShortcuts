@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja Template Formulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        caption {
+            margin: 10px auto;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Jinja Template Core Formulas</caption>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ variable }}</td>
+                <td>Variable Output</td>
+                <td>Outputs the value of a variable</td>
+            </tr>
+            <tr>
+                <td>{{% for item in list %}}</td>
+                <td>For Loop</td>
+                <td>Loops through each item in a list</td>
+            </tr>
+            <tr>
+                <td>{{% if condition %}}</td>
+                <td>Conditional Statement</td>
+                <td>Executes code if the condition is true</td>
+            </tr>
+            <tr>
+                <td>{{% block block_name %}}</td>
+                <td>Block Definition</td>
+                <td>Defines a block that can be overridden</td>
+            </tr>
+            <tr>
+                <td>{{% extends 'base.html' %}}</td>
+                <td>Template Inheritance</td>
+                <td>Inherits from a parent template</td>
+            </tr>
+            <tr>
+                <td>{{% include 'file.html' %}}</td>
+                <td>Include Template</td>
+                <td>Includes another template</td>
+            </tr>
+            <tr>
+                <td>{{ variable | filter }}</td>
+                <td>Filter Application</td>
+                <td>Applies a filter to a variable</td>
+            </tr>
+            <tr>
+                <td>{{% set variable = value %}}</td>
+                <td>Set Variable</td>
+                <td>Sets a variable to a specified value</td>
+            </tr>
+            <tr>
+                <td>{{% macro function_name(args) %}}</td>
+                <td>Macro Definition</td>
+                <td>Defines a reusable chunk of template code</td>
+            </tr>
+            <tr>
+                <td>{{ variable|join(', ') }}</td>
+                <td>Join Filter</td>
+                <td>Joins a list into a string with specified separator</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Jinja String Manipulation Formulas</caption>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ variable | length }}</td>
+                <td>Length Filter</td>
+                <td>Gets the length of a variable</td>
+            </tr>
+            <tr>
+                <td>{{ variable | upper }}</td>
+                <td>Upper Filter</td>
+                <td>Converts a string to uppercase</td>
+            </tr>
+            <tr>
+                <td>{{ variable | lower }}</td>
+                <td>Lower Filter</td>
+                <td>Converts a string to lowercase</td>
+            </tr>
+            <tr>
+                <td>{{ variable | capitalize }}</td>
+                <td>Capitalize Filter</td>
+                <td>Capitalizes the first letter of the string</td>
+            </tr>
+            <tr>
+                <td>{{ variable | title }}</td>
+                <td>Title Filter</td>
+                <td>Capitalizes the first letter of each word</td>
+            </tr>
+            <tr>
+                <td>{{ variable | trim }}</td>
+                <td>Trim Filter</td>
+                <td>Removes whitespace from the beginning and end</td>
+            </tr>
+            <tr>
+                <td>{{ variable | replace('old', 'new') }}</td>
+                <td>Replace Filter</td>
+                <td>Replaces occurrences of 'old' with 'new'</td>
+            </tr>
+            <tr>
+                <td>{{ variable | slice(start, end) }}</td>
+                <td>Slice Filter</td>
+                <td>Slices the string from start to end indices</td>
+            </tr>
+            <tr>
+                <td>{{ variable | striptags }}</td>
+                <td>Strip Tags Filter</td>
+                <td>Removes HTML tags from the string</td>
+            </tr>
+            <tr>
+                <td>{{ list | first }}</td>
+                <td>First Filter</td>
+                <td>Gets the first item in a list</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Jinja Date & Time Formulas</caption>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ variable | datetimeformat('%Y-%m-%d') }}</td>
+                <td>Date Format Filter</td>
+                <td>Formats a datetime object to a string</td>
+            </tr>
+            <tr>
+                <td>{{ variable | now('%Y-%m-%d') }}</td>
+                <td>Current Date Filter</td>
+                <td>Gets the current date formatted as specified</td>
+            </tr>
+            <tr>
+                <td>{{ variable | timeuntil }}</td>
+                <td>Time Until Filter</td>
+                <td>Calculates time until a given date</td>
+            </tr>
+            <tr>
+                <td>{{ variable | timedelta(days=1) }}</td>
+                <td>Time Delta Filter</td>
+                <td>Adds a time delta to a date</td>
+            </tr>
+            <tr>
+                <td>{{ date | date('Y-m-d H:i') }}</td>
+                <td>Date Filter</td>
+                <td>Formats a date object to a specific string format</td>
+            </tr>
+            <tr>
+                <td>{{ variable | ago }}</td>
+                <td>Time Ago Filter</td>
+                <td>Formats as time ago from a given date</td>
+            </tr>
+            <tr>
+                <td>{{ variable | timestamp | date('*') }}</td>
+                <td>Timestamp to Date</td>
+                <td>Converts a timestamp to a date</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Jinja Math Formulas</caption>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ value1 + value2 }}</td>
+                <td>Addition</td>
+                <td>Adds two values together</td>
+            </tr>
+            <tr>
+                <td>{{ value1 - value2 }}</td>
+                <td>Subtraction</td>
+                <td>Subtracts value2 from value1</td>
+            </tr>
+            <tr>
+                <td>{{ value1 * value2 }}</td>
+                <td>Multiplication</td>
+                <td>Multiplies two values</td>
+            </tr>
+            <tr>
+                <td>{{ value1 / value2 }}</td>
+                <td>Division</td>
+                <td>Divides value1 by value2</td>
+            </tr>
+            <tr>
+                <td>{{ value1 // value2 }}</td>
+                <td>Floor Division</td>
+                <td>Returns the largest integer less than or equal to the division</td>
+            </tr>
+            <tr>
+                <td>{{ value1 % value2 }}</td>
+                <td>Modulus</td>
+                <td>Returns the remainder of division</td>
+            </tr>
+            <tr>
+                <td>{{ value | round }}</td>
+                <td>Round Filter</td>
+                <td>Rounds a value to the nearest integer</td>
+            </tr>
+            <tr>
+                <td>{{ value | sum }}</td>
+                <td>Sum Filter</td>
+                <td>Calculates the sum of a list of numbers</td>
+            </tr>
+            <tr>
+                <td>{{ value | min }}</td>
+                <td>Min Filter</td>
+                <td>Finds the minimum value in a list</td>
+            </tr>
+            <tr>
+                <td>{{ value | max }}</td>
+                <td>Max Filter</td>
+                <td>Finds the maximum value in a list</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Jinja Miscellaneous Formulas</caption>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ variable | default('default value') }}</td>
+                <td>Default Filter</td>
+                <td>Returns a default value if variable is undefined</td>
+            </tr>
+            <tr>
+                <td>{{ variable | length | default(0) }}</td>
+                <td>Length with Default</td>
+                <td>Returns length or 0 if variable is undefined</td>
+            </tr>
+            <tr>
+                <td>{{ variable | replace('old', 'new') }}</td>
+                <td>Replace Filter</td>
+                <td>Replaces occurrences of 'old' with 'new'</td>
+            </tr>
+            <tr>
+                <td>{{ variable | indent(4) }}</td>
+                <td>Indent Filter</td>
+                <td>Indents lines of text by a specified number of spaces</td>
+            </tr>
+            <tr>
+                <td>{{ variable | list }}</td>
+                <td>List Filter</td>
+                <td>Converts the variable to a list</td>
+            </tr>
+            <tr>
+                <td>{{ variable | sort }}</td>
+                <td>Sort Filter</td>
+                <td>Sorts a list</td>
+            </tr>
+            <tr>
+                <td>{{ variable | unique }}</td>
+                <td>Unique Filter</td>
+                <td>Removes duplicate items from a list</td>
+            </tr>
+            <tr>
+                <td>{{ variable | safe }}</td>
+                <td>Safe Filter</td>
+                <td>Marks a string as safe to render</td>
+            </tr>
+            <tr>
+                <td>{{ variable | tojson }}</td>
+                <td>To JSON Filter</td>
+                <td>Converts the variable to a JSON string</td>
+            </tr>
+            <tr>
+                <td>{{ variable | jsonify }}</td>
+                <td>Jsonify Filter</td>
+                <td>Converts the variable into a JSON object</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

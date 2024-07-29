@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            body {
-                background-color: cornflowerblue;
-                background-image: url("static/bg.jpg");
-                background-size: cover;
-            }
-            a {
-                color: white;
-                font-size: x-large;
-            }
-        </style>
-    </head>
-    <body>
-        <a href="/shortcuts"><h2>Shortcuts</h2></a>
-        <a href="/formulas"><h2>Formulas</h2></a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Excel</h2>
+            <a href="/excel_shortcuts" class="link">Shortcuts</a>
+            <a href="/excel_formulas" class="link">Cheatsheet</a>
+        </div>
+        <div class="card">
+            <h2>VS Code</h2>
+            <a href="/vs_shortcuts" class="link">Shortcuts</a>
+            <a href="/vs_cheatsheet" class="link">Cheatsheet</a>
+        </div>
+        <div class="card">
+            <h2>Card Title 3</h2>
+            <a href="/jinja_documentation" class="link">Documentattion</a>
+            <a href="/jinja_cheatsheet" class="link">Cheatsheet</a>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</body>
 </html>
